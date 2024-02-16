@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.pagina {
+    margin: 20px;
+}
+
+.imagenes img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.imagenes img.correcta {
+    border: 5px solid green;
+}
+
+.imagenes img.incorrecta {
+    border: 5px solid red;
+}
+

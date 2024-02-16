@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Aplicación Educativa</title>
+</head>
+<body>
+    <div id="pagina1" class="pagina">
+        <h2>¿Qué imagen empieza por la sílaba "CO"?</h2>
+        <div class="imagenes">
+            <img src="imagenes/conejo.jpg" alt="Conejo" onclick="verificarRespuesta('conejo', 'CO')">
+            <img src="imagenes/raton.jpg" alt="Ratón" onclick="verificarRespuesta('raton', 'CO')">
+            <img src="imagenes/paraguas.jpg" alt="Paraguas" onclick="verificarRespuesta('paraguas', 'CO')">
+        </div>
+        <button onclick="reproducirAudio('preguntaCO.mp3')">Pulsar</button>
+    </div>
+
+    <div id="pagina2" class="pagina" style="display: none;">
+        <h2>¿Qué imagen empieza por la sílaba "RA"?</h2>
+        <div class="imagenes">
+            <img src="imagenes/leon.jpg" alt="León" onclick="verificarRespuesta('leon', 'RA')">
+            <img src="imagenes/coche.jpg" alt="Coche" onclick="verificarRespuesta('coche', 'RA')">
+            <img src="imagenes/rana.jpg" alt="Rana" onclick="verificarRespuesta('rana', 'RA')">
+        </div>
+        <button onclick="reproducirAudio('preguntaRA.mp3')">Pulsar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
